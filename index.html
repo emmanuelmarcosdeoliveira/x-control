@@ -1,13 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Template de Projetos em Bootstrap</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <title>Exercício Modulo 13</title>
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-  <h1>Olá Bootstrap</h1>
+  <header id="cabecalho">
+    <div class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="#">
+          <h1>X-control</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse justify-content-end" id="menu">
+          <ul class="navbar-nav  nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#inicio">Ínicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#controles">Controles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#contato">Contato</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </div>
+  </header>
+
+
+  <div class="x" data-bs-spy="scroll" data-bs-target="#cabecalho">
+
+    <section id="inicio">
+      <div class="container">
+        <h2 class="text-center" class="text-bg-light">X-controls</h2>
+        <div id="carousel-exemplo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+              <img class="d-block w-100" src="img/img-2.jpg" alt="controle-azul">
+              <div class="carousel-caption">
+                <h2>Controle-X</h2>
+              </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+              <img class="d-block w-100" src="img/img-1.jpg" alt="controle-amarelo">
+              <div class="carousel-caption">
+                <h2>Controle-Y</h2>
+              </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+              <img class="d-block w-100" src="img/img-3.jpg" alt="controle-sei-la">
+              <div class="carousel-caption">
+                <h2>Controle-Z</h2>
+              </div>
+            </div>
+          </div>
+          <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="controles">
+      <div class="container">
+        <h2 class="text-center" class="text-bg-light">Escolha o seu controle</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="card">
+              <img src="img/x-box-5.jpg" alt="Imagem Teste">
+              <div class="card-body">
+                <h4 class="class-title">
+                  Controle 01
+                </h4>
+                <p class="class-text">
+                  Esse controle é o top das galaxya
+                </p>
+                <a href="#" class="btn btn-primary">COMPRAR</a>
+                <a href="#" class="btn btn-secondary">SAIBA MAIS</a>
+              </div>
+            </div>
+          </div>
+          <div class=" col-sm-12 col-md-6 col-xl-4">
+            <div class="card">
+              <img src="img/x-box-8.jpg" alt="Imagem Teste">
+              <div class="card-body">
+                <h4 class="class-title">
+                  Controle 01
+                </h4>
+                <p class="class-text">
+                  Esse controle é o top das galaxya
+                </p>
+                <a href="#" class="btn btn-primary">COMPRAR</a>
+                <a href="#" class="btn btn-secondary">SAIBA MAIS</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="card">
+              <img src="img/x-box-6.jpg" alt="Imagem Teste">
+              <div class="card-body">
+                <h4 class="class-title">
+                  Controle 01
+                </h4>
+                <p class="class-text">
+                  Esse controle é o top das galaxya
+                </p>
+                <a href="#" class="btn btn-primary">COMPRAR</a>
+                <a href="#" class="btn btn-secondary">SAIBA MAIS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="contato" class="container">
+      <div>
+        <p class="text-center">Todos seus direitos Reservados</p>
+      </div>
+    </div>
+  </div>
+  <script src="lib/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

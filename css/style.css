@@ -1,0 +1,54 @@
+body {
+  background-color: rgb(247, 247, 247);
+}
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgb(247, 247, 247);
+}
+
+.card {
+  background-color: rgba(245, 245, 245, 0.945);
+}
+
+.card img {
+  border-radius: 4px 4px 0px 0px;
+}
+
+.carousel-item img {
+  border-radius: 4px;
+}
+
+.navbar .nav-link.active {
+  color: #f1f1f1;
+}
+
+.nav-link {
+  text-align: center;
+}
+
+section {
+  padding-top: 75px;
+}
+
+.container a {
+  text-decoration: none;
+  color: black;
+}
+.container #contato p {
+  padding: 50px;
+  margin-top: 50px;
+}
+#contato {
+  background-color: rgba(241, 241, 241, 0.863);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+
+
